@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Banner</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous" rel="stylesheet">
+  <script src="https://use.fontawesome.com/701384b3c3.js"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+  <body>
+    <header>
+      <img class="logo" src="images/logo.png" />
+      <div class="header-nav">
+        <ul>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Product Gallery</li>
+        </ul>
+      </div>
+    </header>
+    <div class="slideshow" id="slideshow">
+      <ol class="slides" id="slides">
+        <button class="controls" id="previous"><i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i></button>
+
+        <li class="slide showing">
+          <div class="description">
+            <h2>First Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="tiltview col slide1">
+            <a href="#"><img src="images/image1.jpg" alt=""/></a>
+            <a href="#"><img src="images/image2.jpg" alt=""/></a>
+          </div>
+        </li>
+
+        <li class="slide">
+          <div class="description">
+            <h2>Second Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="tiltview col slide2">
+            <a href="#"><img src="images/image3.jpg" alt=""/></a>
+            <a href="#"><img src="images/image4.jpg" alt=""/></a>
+          </div>
+        </li>
+
+        <li class="slide">
+          <div class="description">
+            <h2>Third Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="tiltview col slide3">
+            <a href="#"><img src="images/image5.jpg" alt=""/></a>
+            <a href="#"><img src="images/image6.jpg" alt=""/></a>
+          </div>
+        </li>
+
+        <li class="slide">
+          <div class="description">
+            <h2>Fourth Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="tiltview col slide4">
+            <a href="#"><img src="images/image7.jpg" alt=""/></a>
+            <a href="#"><img src="images/image8.jpg" alt=""/></a>
+          </div>
+        </li>
+        <button class="controls" id="next"><i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i></button>
+      </ol>
+
+      <nav>
+        <button class="btn" id="slide1"></button>
+        <button class="btn" id="slide2"></button>
+        <button class="btn" id="slide3"></button>
+        <button class="btn" id="slide4"></button>
+      </nav>
+        <a href="#"><i class="fa fa-pause fa-2x" id="pause" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-play fa-2x hide" id="play" aria-hidden="true"></i></a>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+.page-wrap {
+  width: 100%;
+  max-width: 800px;
+  margin: 2.5% auto;
+}
+
+.main-story {
+  position: relative;
+  margin: 0 auto 3.125% auto;
+  width: inherit;
+  overflow: hidden;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: lightblue;
+}
+
+.story-intro {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 2.5%;
+  color: white;
+}
+
+h1 {
+   font-size: 4em;
+}
+h1, h2 {
+  margin: 0 0 1.25% 0;
+}
+
+.story-intro h1 {
+  font-size: 2.5em;
+}
+.story-intro p {
+  margin: 0;
+}
+
+.sub-stories {
+  overflow: hidden;
+  margin: 0 0 3.125% 0;
+  width:inherit;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.sub-stories img {
+    max-width: 100%;
+}
+.sub-story {
+  float: left;
+  width: 31.25%;
+  margin-right: 3.125%;
+  position: relative;
+  font-size: 80%;
+}
+.last {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 840px){
+  h1 {
+    font-size: 2.8125em;
+  }
+  .story-intro h1 {
+    font-size: 1.875em;
+  }
+  .story-intro h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .page-wrap {
+    text-align: center;
+
+  }
+  .sub-story h2 {
+    font-size: .9375em;
+  }
+  .sub-story p {
+    font-size: .75em;
+  }
+  .sub-story {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 470px){
+  .page-wrap h1 {
+    font-size: 2em;
+  }
+  .story-intro h1 {
+    font-size: 1.5em;
+  }
+}

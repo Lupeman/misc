@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Carrois+Gothic');
+
+body {
+  padding: 5px;
+  font-family: 'Carrois Gothic', sans-serif;
+}
+
+header {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  height: 150px;
+}
+
+h1 {
+  display: inline-block;
+
+}
+
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#search {
+  border: 1px solid #383838;
+  margin-left: 100px;
+  margin-right: 0;
+  font-size: 15px;
+  margin-bottom: 50px;
+  border-right: none;
+  padding: 5px;
+  width: 400px;
+
+}
+
+.icon {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #383838;
+  height: 30px;
+}
+
+.icon:hover, .icon:focus{
+  color: #fff;
+  background-color: #383838;
+}
+
+#list {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.video {
+  width: 45%;
+  height: 400px;
+  padding: 20px 10px;
+}
+
+iframe {
+  margin-left: 40px;
+  padding-top: 20px;
+}
+
+h2:hover {
+  color: red;
+}
