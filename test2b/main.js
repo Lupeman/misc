@@ -2,6 +2,7 @@
 $(document).ready(function(){
   $('.carousel').slick({
     infinite: false,
+    dots: false,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -15,7 +16,7 @@ $(document).ready(function(){
         slidesToShow: 2,
         slidesToScroll: 2,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {

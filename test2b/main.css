@@ -19,9 +19,12 @@
   height: 400px;
   position: relative;
   width: 100%;
-  padding: 40px 0 0 40px;
+  padding: 20px 0 0 40px;
+  overflow: hidden;
 }
-
+h1 {
+  font-size: 1.75em;
+}
 .number {
   position: absolute;
   bottom: 0;
@@ -30,18 +33,14 @@
   margin-left: 30px;
 }
 .info {
-  opacity:0;
-  transition: opacity .5s ease-out;
-  -moz-transition: opacity .5s ease-out;
-  -webkit-transition: opacity .5s ease-out;
-  -o-transition: opacity .5s ease-out;
-  -webkit-transition-delay: .6s; /* Safari */
-  transition-delay: .6s;
+  margin-top: 25%;
+  font-size: 1.15em;
+  margin-left: -100%;
+  transition: transform .4s
+  cubic-bezier(.33,.005,.125,1.005) 180ms;
 }
 .item:hover .info {
-  opacity:1;
-  -webkit-transition-delay: 0s; /* Safari */
-  transition-delay: 0s;
+  transform: translateX(45%);
 }
 
 ul li {
@@ -55,7 +54,7 @@ ul li {
 .item .number {
   transition: transform .4s cubic-bezier(.33,.005,.125,1.005) 180ms;
 }
-.item .number:hover {
+.item:hover .number {
   transform: translateY(-120%);
   transition: transform .4s cubic-bezier(.33,.005,.125,1.005) 180ms;
 }
@@ -80,6 +79,7 @@ ul li {
     opacity: 0;
 }
 
+
 .item .number3::before {
   content: '';
     height: 2px;
@@ -100,7 +100,7 @@ ul li {
     opacity: 0;
 }
 
-.item .number:hover::before{
+.item:hover .number::before{
   opacity:1;
   top: 70px;
   transform: translateX(-700%);
@@ -244,7 +244,7 @@ background-repeat: no-repeat;
 .slick-prev,
 .slick-next {
     font-size: 0;
-    /*position: absolute;*/
+    position: absolute;
     bottom: 20px;
     color: #393939;
     border: 0;
