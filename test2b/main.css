@@ -24,6 +24,7 @@
 }
 h1 {
   font-size: 1.75em;
+  padding: 0 15px;
 }
 .number {
   position: absolute;
@@ -158,10 +159,23 @@ ul li {
   background-repeat: no-repeat;
 }
 .item:nth-child(5){
-  background-image: url("images/item5-sectors.png");
+  /*background-image: url("images/item5-pie.png");*/
   background-color: #CC5335;
   background-position: 90% 90%;
   background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.item:nth-child(5) img {
+  margin-top: 85%;
+  margin-left: 70%;
+  height: 60px;
+  width: auto;
+  transition: transform .4s cubic-bezier(.33,.005,.125,1.005) 180ms;
+}
+
+.item:nth-child(5):hover img {
+  transform: translate(-210%,-220%) scale(2.2) rotateZ(180deg);
 }
 
 .item:nth-child(6){
@@ -193,9 +207,18 @@ ul li {
   background-repeat: no-repeat;
 }
 .item:nth-child(8){
+  background-image: url("images/meeting2.png");
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.item:nth-child(8) .layer {
   background-color: #F2A0A2;
   opacity: 0.7;
 }
+
+
 .item:nth-child(9){
 background-image: url("images/item9-awards-white.png");
 background-color: #37BF45;
@@ -299,7 +322,7 @@ background-repeat: no-repeat;
   pointer-events: none;
 }*/
 
-.slick-prev,
+/*.slick-prev,
 .slick-next {
     font-size: 0;
     position: absolute;
@@ -308,36 +331,77 @@ background-repeat: no-repeat;
     border: 0;
     background: none;
     z-index: 1;
+}*/
+.slick-arrow {
+  color: #000000;
+  transition: all .2s ease-in-out;
+}
+.slick-arrow:hover {
+  color: #ff0051;
+  transform: scale(2) rotateZ(360deg);
 }
 
+.fa-angle-left {
+  position: absolute;
+  margin-top: 36.5%;
+  margin-left: 35%;
+}
+
+.fa-angle-right {
+  position: absolute;
+  margin-top: 1%;
+  margin-left: 62%;
+}
+/*}
 .slick-prev {
     margin: 21% auto 0 40%;
-}
+}*/
 
-.slick-prev:after {
+/*.slick-prev:after {
   content: "\f177";
   font: 40px/1 'FontAwesome';
   color: #393939;
-}
+}*/
 
-.slick-next {
+/*.slick-next {
     margin: 21% 45% 0 0;
-}
+}*/
 
-.slick-next:after {
+/*.slick-next:after {
 	   content: "\f178";
      font: 40px/1 'FontAwesome';
      color: #393939;
-}
+}*/
 
-.slick-prev:hover:after,
+/*.slick-prev:hover:after,
 .slick-next:hover:after {
     color: #ff0051;
-}
+}*/
+
 
 button {
 color: #393939;
 }
+
 button:focus {
     outline: 0;
+}
+
+@media screen and (max-width: 1024px){
+  h1 {
+    font-size: 1.5em;
+    /*margin-right: 10px;*/
+  }
+}
+
+@media screen and (max-width: 780px){
+  .about {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .about {
+    font-size: 2.5em;
+  }
 }

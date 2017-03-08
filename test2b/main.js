@@ -9,13 +9,15 @@ $(document).ready(function(){
     adaptiveHeight: true,
     arrows: true,
     useCSS: true,
+    nextArrow: '<i class="fa fa-angle-right fa-2x"></i>',
+    prevArrow: '<i class="fa fa-angle-left fa-2x"></i>',
     responsive: [
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-        infinite: true,
+        // infinite: true,
         dots: false
       }
     },
